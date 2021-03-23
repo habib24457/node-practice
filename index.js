@@ -11,7 +11,11 @@ const app = express();
 // }
 
 app.get('/',(req, res)=>{
-    res.send('Thank you...');
+    const fruit ={
+        product: 'coconut',
+        price:200
+    }
+    res.send(fruit);
 });
 
 app.listen(3000,()=>{
